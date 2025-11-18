@@ -59,6 +59,13 @@ console.log(mynumber===number1); //compara inclusiv tipul de date
 console.log(mynumber!==number1); //compara incusiv tipul de date
 console.log(number1>=number2);
 console.log(number1<=number2);
+const myFirstNumber=20;
+let mySecondNumber=20;
+console.log("My number :"+mySecondNumber);
+
+myFirstNumber+=5; //aduna 5  la mynumber si o atribuie inapoi
+console.log("My number :"+myFirstNnumber);
+
 
 
 
