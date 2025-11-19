@@ -11,3 +11,4 @@ class Person{
 }
 let p=new Person("Mihai","Popescu",new Date("12-12-2023"));
 console.log(p.calculeazaVarsta());
+// min 1:40
