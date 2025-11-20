@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bara-sus{
+    background-color: antiquewhite;
+    height: 3em;
+}
+.titlu{
+    text-align: center;
+
+}
+.form{
+    text-align: center;
+    padding: 2em;
+ 
+}
+.add-task-label{
+    font-size:1.5em;
+    padding: 1em;
+}
+.submitBtn{
+    padding: 0.4em;
+    height: 2em;
+    font-size: 1.2em;
+    background-color:blue;
+    color: white;
+
+}
+.input-task{
+    font-style: italic;
+    size: 3em;
+    font-size: 18px;
+    width: 300px;
+    height: 2em;
+}
+.clear-list-btn{
+    color: white;
+    background-color: red;
+    width: 550px;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 5px;
+    
+}
+.container-buton{
+    text-align: center;
+}
