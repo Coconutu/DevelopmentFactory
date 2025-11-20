@@ -4,7 +4,7 @@ var query=document.getElementById("title");
 
 // console.log(query.innerText);
 
-query.innerHTML +="<p id="text">Buna ziua</p>"
+query.innerHTML +="<p id='text'>Buna ziua</p>"
 //query.append("Buna ziua!");
 console.log(query.innerHTML);
 var hello=document.getElementById("text");
