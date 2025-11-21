@@ -1,36 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aplicatie meteo</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <div class="page-container">
-      <div class="side-bar">
-        <form id="cityForm" class="city-form">
-          <label for="city">Introduceti orasul </label>
-          <input
-            id="city"
-            type="text"
-            placeholder="Bucuresti,Cluj,Pitesti"
-            required
-          />
-          <button class="btn btn-search">Caută</button>
-        </form>
-        <div class="separator">
-          <span class="separator-text">sau</span>
-        </div>
-        <button id="locationBtn" class="btn btn-location">
-          Foloseste locatia curenta
-        </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aplicatie meteo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="page-container">
+    <div class="side-bar">
+      <form id="cityForm" class="city-form">
+        <label for="city">Introduceti orasul </label>
+        <input id="city" type="text" placeholder="Bucuresti,Cluj,Pitesti" required />
+        <button class="btn btn-search">Caută</button>
+      </form>
+      <div class="separator">
+        <span class="separator-text">sau</span>
       </div>
-      <div class="page-content">
-        <div>
-          <h2>Vremea in Bucuresti astazi</h2>
-          <div class="weather-panel today">
+      <button id="locationBtn" class="btn btn-location">
+        Foloseste locatia curenta
+      </button>
+    </div>
+    <div class="page-content">
+      <div>
+        <h2>Vremea in Bucuresti astazi</h2>
+        <div class="weather-panel today">
+          <div class="weather-details">
+            <p class="date">2025-11-21</p>
+            <p>Temperatura: 10.7oC</p>
+            <p>Vant: 9.8 km/h</p>
+            <p>Umiditate: 63%</p>
+          </div>
+          <div>
+            <img src="./weather-icons/cloudy.svg" alt="weather icon" />
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2>Vremea in Bucuresti in urmatoarele zile</h2>
+        <div class="weather-items">
+          <div class="weather-panel forecast">
             <div class="weather-details">
               <p class="date">2025-11-21</p>
               <p>Temperatura: 10.7oC</p>
@@ -42,23 +53,38 @@
             </div>
           </div>
         </div>
-        <div>
-          <h2>Vremea in Bucuresti in urmatoarele zile</h2>
-          <div class="weather-items">
-            <div class="weather-panel forecast">
+         <div class="weather-items">
+          <div class="weather-panel forecast">
             <div class="weather-details">
               <p class="date">2025-11-21</p>
               <p>Temperatura: 10.7oC</p>
               <p>Vant: 9.8 km/h</p>
               <p>Umiditate: 63%</p>
             </div>
+            <div>
+              <img src="./weather-icons/cloudy.svg" alt="weather icon" />
+            </div>
+          </div>
+        </div>
+         <div class="weather-items">
+          <div class="weather-panel forecast">
+            <div class="weather-details">
+              <p class="date">2025-11-21</p>
+              <p>Temperatura: 10.7oC</p>
+              <p>Vant: 9.8 km/h</p>
+              <p>Umiditate: 63%</p>
+            </div>
+            <div>
+              <img src="./weather-icons/cloudy.svg" alt="weather icon" />
+            </div>
           </div>
         </div>
       </div>
     </div>
     <script src="./script.js"></script>
-  </body>
+</body>
+
 </html>
 
-<!-- min 9:05
+<!-- min 9:16
 https://www.youtube.com/watch?v=xx4ql73UakA&list=FLRtI4WCdoYSAEG859jhqFAg -->
