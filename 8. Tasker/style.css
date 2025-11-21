@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    background-color:antiquewhite;
 }
 .bara-sus{
     background-color: antiquewhite;
@@ -45,4 +46,19 @@
 }
 .container-buton{
     text-align: center;
+}
+.container-lista{
+    text-align: center;
+    margin: 5px;
+    background-color: cadetblue;
+    text-decoration: solid;
+  
+   
+  
+    
+}
+.container-lista ul li{
+    text-align: center;
+    font-size: 1.5em;
+
 }
