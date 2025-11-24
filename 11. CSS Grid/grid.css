@@ -1,16 +1,32 @@
-.titlu{
-    font-style: italic;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif
+.container {
+  /* Elementele se aseaza pe aceeasi linie cand setam display:flex */
+  display: grid;
+  
+  /*latimea fiecarei coloane  */
+  grid-template-columns: 300px 300px;
+  
+  /* inaltimea fiecarui rand */
+  grid-template-rows: 200px 200px 400px;
+  
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  gap:10px
 }
-.user-image-description{
-display: flex;
-align-items: center;
-gap:10px;
+.container > div {
+  padding: 20px;
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: 10px;
+  background-color: beige;
 }
-.user-container{
-    padding: 10px;
-    background-color: antiquewhite;
-    margin: 0.5em;;
+img {
+  border-radius: 100rem;
+  width: 50px;
+  /* display block si float left face ca textul sa se aseze in jurul imaginii */
+  display: block;
+  float: left;
+  margin: 10px;
 }
 
+/* min 10:15 */
