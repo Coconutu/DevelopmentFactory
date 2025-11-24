@@ -1,18 +1,13 @@
 .container {
   /* Elementele se aseaza pe aceeasi linie cand setam display:flex */
   display: grid;
-  
-  /*latimea fiecarei coloane  */
-  grid-template-columns: 300px 300px;
-  
-  /* inaltimea fiecarui rand */
-  grid-template-rows: 200px 200px 400px;
-  
+  grid-template-columns: 300px 300px 300px; /*latimea fiecarei coloane  */
+  /* grid-template-rows: 200px 200px 400px; inaltimea fiecarui rand */
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: italic;
-  gap:10px
+  gap: 10px;
 }
 .container > div {
   padding: 20px;
@@ -29,4 +24,4 @@ img {
   margin: 10px;
 }
 
-/* min 10:15 */
+/* min 16:31 */
