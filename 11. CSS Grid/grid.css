@@ -1,7 +1,24 @@
 .container {
   /* Elementele se aseaza pe aceeasi linie cand setam display:flex */
   display: grid;
-  grid-template-columns: 300px 300px 300px; /*latimea fiecarei coloane  */
+
+  /* latimea fiecarei coloane  */
+  /* grid-template-columns: 300px 300px 300px;  */
+
+  /* folosirea functiei repeat 1fr- 1 fraction, se umple intreaga pagina, transmite instructiunea ca fiecare element sa ocupe tot spatiu alocat*/
+  /* grid-template-columns: repeat(5, 1fr);  */
+
+  /* deoarece nu stim cate coloane vor fi si punem auto-fit, latimea unei coloana =sa fie de 300 px  */
+  /* punem atatea carduri cate incap cu latimea de 300 px pe toata latimea paginii, dar va pune cate elemente are disponibile in cod */
+  /* grid-template-columns: repeat(auto-fit, 300px); */
+
+/* calculare dinamica a fiecarui element */
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+
+  /* auto-fill va aloca si spatiul nefolosit, in carduri egadle de cate 300 px */
+/* grid-template-columns: repeat(auto-fill, 300px); */
+
+
   /* grid-template-rows: 200px 200px 400px; inaltimea fiecarui rand */
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
@@ -9,7 +26,7 @@
   font-style: italic;
   gap: 10px;
 }
-.container > div {
+.container div {
   padding: 20px;
   border: 1px solid rgb(201, 201, 201);
   border-radius: 10px;
@@ -24,4 +41,4 @@ img {
   margin: 10px;
 }
 
-/* min 16:31 */
+/* min 30:31 */
